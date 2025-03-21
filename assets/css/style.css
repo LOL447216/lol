@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(113.3deg, #430558 0%, #650012 100%);
+
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+
+/* header */
+
+.header{
+    padding: 34px 0px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 60px;
+}
+
+.menu-list{
+    font-size: 20px;
+    color: white;
+}
+
+.active{
+    color: #FFD600;
+}
+
+.menu-mob{
+    display: none;
+}
+
+/* end-header */
+
+
+/* banner */
+
+.banner{
+    margin: 90px 0px 200px 0px;
+}
+
+.banner__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.banner__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+    max-width: 608px;
+    color: white;
+}
+
+.banner__title>span{
+    color: #FFD600;
+}
+
+.banner__text{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    margin-bottom: 40px;
+    color: white;
+    max-width: 512px;
+}
+
+.groub-btn{
+    display: flex;
+    gap: 22px;
+}
+
+.btn-buy{
+    padding: 22px 40px;
+    background: linear-gradient(95.5deg, #DE0D33 0%, #AF0EE7 100%);
+    backdrop-filter: blur(28px);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.btn-creat{
+    padding: 22px 40px;
+    background: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF
+}
+
+.groub-str{
+    display: flex;
+    gap: 8px;
+    margin-top: 35px;
+}
+
+.banner__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* end-banner */
+
+/* art */
+
+.nft-art{
+    margin-bottom: 200px;
+    color: white;
+}
+
+.nft-art__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.art__title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 33px;
+}
+
+.art__title>span{
+    color: #FFD600;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin-bottom: 41px;
+    gap: 120px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 161%;
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.btn-art{
+    padding: 22px 40px;
+    background: linear-gradient(95.5deg, #DE0D33 0%, #AF0EE7 100%);
+    backdrop-filter: blur(28px);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.art__text{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 161%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 41px;
+    max-width: 807px;
+}
+
+
+/* end-art */
+
+
+/* catalog */
+
+.catalog{
+    margin-bottom: 159px;
+}
+
+.catalog__title{
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__title>span{
+    color: #FFD600;
+}
+
+.catalog__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.catalog__card{
+    padding: 31px 28px 31px 28px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 41px;
+    cursor: pointer;
+}
+
+.catalog__card-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 8px;
+    margin-top: 29px;
+}
+
+.catalog__card-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    max-width: 256px;
+}
+
+.catalog__card:hover{
+    background: linear-gradient(152.11deg, #DE0D33 0%, #AF0EE7 100%);
+    color: white;
+}
+
+/* end-catalog */
+
+
+/* footer */
+
+.footer{
+    padding: 100px 0px 100px 0px;
+}
+
+.footer__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 41px;
+}
+
+.icons{
+    display: flex;
+    gap: 33px;
+}
+
+
+
+/* end-footer */

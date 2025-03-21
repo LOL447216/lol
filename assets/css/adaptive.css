@@ -1,0 +1,249 @@
+#burger {
+    display: none; 
+}
+
+.menu-mob{
+    display: none;
+}
+
+.menu-mob label {
+    display: none;
+}
+
+@media screen and (max-width:390px) {
+
+    /* header */
+ 
+    .menu{
+        display: none;
+    }
+
+    .menu-mob{
+        display: block;
+    }
+
+    .menu-mob label {
+        display: block; 
+        cursor: pointer; 
+        font-size: 30px;
+        position: relative;
+        z-index: 1000; 
+    }
+
+    .menu_nav {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%; 
+        height: 100%; 
+        background-color: #110f11e5;
+        flex-direction: column;
+        padding-top: 60px; 
+        z-index: 999;
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
+    }
+
+    #burger:checked + label + .menu_nav {
+        display: flex;
+        opacity: 1; 
+    }
+
+    #burger:checked + label::before {
+        content: '×'; 
+        font-size: 70px;
+        color: white;
+    }
+
+    label[for=burger]::before {
+        content: '='; 
+        font-size: 70px;
+        color: white;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        color: #fff; 
+        text-decoration: none; 
+        padding: 10px;
+        text-align: center; 
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2); 
+    }
+
+    .header{
+        padding: 20px 0px;
+    }
+
+    /* end-header */
+
+
+    /* banner */
+
+    .banner{
+        margin: 30px 0px 70px 0px;
+    }
+
+    .banner__inner{
+        flex-direction: column;
+    }
+
+    .banner__right>img{
+        width: 380px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .group-str>a>img{
+        width: 40px;
+    }
+
+    .banner__title{
+        font-size: 25px;
+        margin-bottom: 14px;
+        line-height: 100%;
+    }
+
+    .banner__text{
+        font-size: 18px;
+        line-height: 100%;
+        margin-bottom: 14px;
+    }
+
+    .groub-btn{
+        display: flex;
+        gap: 12px;
+    }
+
+    .btn-buy{
+        padding: 15px 30px;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+
+    .btn-creat{
+        padding: 15px 30px;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+
+    /* end-banner */
+
+    /* art */
+
+    .nft-art{
+        margin-bottom: 70px;
+    }
+
+    .art__title{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        gap: 30px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__text{
+        font-size: 16px;
+    }
+
+    .btn-art{
+        padding: 15px 30px;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+    }
+
+    .art__text{
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 161%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 41px;
+        max-width: 807px;
+    }
+
+
+    /* end-art */
+
+
+    /* catalog */
+
+    .catalog{
+        margin-bottom: 70px;
+    }
+
+    .catalog__title{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .card-none{
+        display: none;
+    }
+
+    .str-cative{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* end-catalog */
+
+    /* footer */
+
+    .footer{
+        padding: 0px 0px 40px 0px;
+    }
+
+    .footer__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 41px;
+    }
+
+    .icons{
+        display: flex;
+        gap: 33px;
+    }
+
+
+
+    /* end-footer */
+}
+
+
+
